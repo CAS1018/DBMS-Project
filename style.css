@@ -4,16 +4,26 @@
     box-sizing: border-box;
 }
 body {
-    background-color: #F2ECD4;
+    background-color: #A3D9F5;
 }
 .navbar {
     display: flex;
     align-items: center;
     padding: 20px;
+    height: 95px;
+    background-color: #222222;
+}
+img {
+    width: 100%;
+    height: 100%;
 }
 nav {
     flex: 1;
     text-align: right;
+}
+.logo {
+    width: 145px;
+    height: 95px;
 }
 nav ul {
     display: inline-block;
@@ -21,32 +31,48 @@ nav ul {
 }
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 60px;
+}
+.cart {
+    height: 48px;
+    width: 50px;
+}
+h1 {
+    color: white;
+    font: icon;
 }
 a {
     text-decoration: none;
-    color: #555 ;
+    color: white;
 }
 p {
-    color: #555;
+    color:#BFD9D9;
 }
 .container {
-    max-width: 1300px;
+    width: 100%;
+    height: fit-content;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    border: 5px solid orange;
 }
-.row {
+.row-1 {
+    background-color: #222222;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: 5px solid red;
 }
-.col-2 {
+.row-1-text {
+    text-align: center;
     flex-basis: 50%;
-    min-width: 300px;
+    min-width: 600px;
+    border: 5px solid cyan;
 }
-.col-2 img {
-    max-width: 100%;
-    padding: 50px 0;;
+.bg-img {
+    background-repeat: no-repeat;
+    background-image: url('../images/image1.jpg');
+    background-size: 100%;
+    height: 800px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
