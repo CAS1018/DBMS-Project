@@ -39,6 +39,7 @@ nav ul li {
 .cart {
     height: 46px;
     width: 46px;
+    margin-right: 40px;
 }
 h1 {
     color: white;

@@ -23,7 +23,7 @@
             </nav>
             <a href="#shopping-cart">
                 <div class="cart">
-                    <img src="images/cart1.png" alt="shopping cart">
+                    <img src="images/cart2.png" alt="shopping cart">
                 </div>
             </a>
         </header>
