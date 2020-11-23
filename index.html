@@ -8,25 +8,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
+    <div class="container" id="Home">
+        <header>
             <div class="logo">
                 <img src="images/logo1.jpg" width="125" alt="Load error">
             </div>       
             <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="#Home">Home</a></li>
                     <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contacts</a></li>
+                    <li><a href="#footer">About</a></li>
+                    <li><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
-            <a href="#shoppincart">
+            <a href="#shopping-cart">
                 <div class="cart">
                     <img src="images/cart1.png" alt="shopping cart">
                 </div>
             </a>
-        </div>
+        </header>
+
+        <!-- <script type="text/javascript">
+            window.addEventListener("scroll", function() {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script> -->
 
         <div class="bg-img">
             <!-- <img src="images/image1.jpg" alt=""> -->
@@ -40,9 +47,9 @@
             </div>
         </div>
         <div class="shopping-redirect">
-            <button class="btn">Start Shopping</button>
+            <a href="#products" class="btn"> Start Shopping</a>
         </div>
-        <footer>
+        <footer id="footer">
             
         </footer>
     </div>
