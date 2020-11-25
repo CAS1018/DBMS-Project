@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +17,7 @@
             <nav>
                 <ul>
                     <li><a href="#Home">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="products.php">Products</a></li>
                     <li><a href="#footer">About</a></li>
                     <li><a href="#footer">Contacts</a></li>
                 </ul>
@@ -47,7 +48,7 @@
             </div>
         </div>
         <div class="shopping-redirect">
-            <a href="products.html" class="btn"> Start Shopping</a>
+            <a href="products.php" class="btn"> Start Shopping</a>
         </div>
         <footer id="footer">
             

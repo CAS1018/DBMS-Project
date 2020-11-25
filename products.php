@@ -1,3 +1,8 @@
+<?php
+    include_once "includes/dbconn.php";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +20,7 @@
             </div>       
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li><a href="">Products</a></li>
                     <li><a href="#footer">About</a></li>
                     <li><a href="#footer">Contacts</a></li>
