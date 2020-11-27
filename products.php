@@ -35,24 +35,13 @@
     </div>
    <!-- display products with php pagination -->
    <div class="products">
-        <?php 
-            //define num of result per page
-            $results_per_page = 10;
-            
-            $sql_query = "SELECT * FROM products";
-            $result = mysqli_query($conn, $sql_query);
-            $number_of_results = mysqli_num_rows($result);
-            
-            while ($row = mysqli_fetch_array($result)) {
-                echo $row['name-desc'] . ' ' . $row['price'] . '<br>';
-            }
-            
-            $number_of_pages = ceil($number_of_results / $results_per_page);
-            
-            for ($page=1; $page <= $number_of_pages; ++$page) {
-                echo '<a href = "index2.php?page=' . $page . '">' . $page . '</a> ';
-            }
+        <?php
+            include_once "includes/pagination.php";
         ?>
-    </div>
+   </div>
+   
+   <footer>
+       
+   </footer>
 </body>
 </html>
