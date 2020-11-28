@@ -8,12 +8,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Shoe Store | Ecommerce Website Project</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bs5/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container" id="Home">
         <header>
             <div class="logo">
                 <img src="images/logo1.jpg" width="125" alt="Load error">
@@ -32,14 +31,18 @@
                 </div>
             </a>
         </header>
-    </div>
    <!-- display products with php pagination -->
-   <div class="products">
-        <?php
-            include_once "includes/pagination.php";
-        ?>
-   </div>
-   
+        <div class="products">
+            <script src="htps://umpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+            <script src="bs5/js/bootstrap.js"></script>
+                <!--create formating for displaying products  -->
+                
+            <div class="row"> 
+            
+                <?php
+                    include_once "includes/pagination.php";
+                ?>
+        </div>
    <footer>
        
    </footer>

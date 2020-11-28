@@ -1,6 +1,6 @@
 <?php 
     //define num of result per page
-    $results_per_page = 10;
+    $results_per_page = 12;
     
     $sql_query = "SELECT * FROM products";
     $result = mysqli_query($conn, $sql_query);
@@ -25,13 +25,14 @@
     $sql_query = "SELECT * FROM products LIMIT " . $this_page_first_result  . ',' . $results_per_page;
     $result = mysqli_query($conn, $sql_query);
     
-    while ($row = mysqli_fetch_array($result)) {
-        echo  '<div class="productblock">';
-        echo '<img src="' . $row['imageURL'] . '"';
+    while ($row = mysqli_fetch_array($result)) { 
+        echo '<div class="col-md">';
+        echo '<img src="' . $row['imageURL'] . '">'; 
+        echo '<p>' . $row['name_desc'] . '<br>' . $row['price'] . ' ' . $row['currency'] . '<br> <p>'; 
         echo '</div>';
-        echo $row['name_desc'] . ' ' . $row['price'] . '<br>';
     }
     
+    echo '</div>';
     
     //display links to the pages
     for ($page=1; $page <= $number_of_pages; ++$page) {
