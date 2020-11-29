@@ -26,7 +26,7 @@
     $result = mysqli_query($conn, $sql_query);
     
     while ($row = mysqli_fetch_array($result)) { 
-        echo '<div class="col-md">';
+        echo '<div class="col-md prod_block">';
         echo '<img src="' . $row['imageURL'] . '">'; 
         
         echo '<div class="cold-md prod_desc">';
@@ -40,7 +40,7 @@
         echo '</div>';
         
         echo '<div class="col-md pag_cart">';
-        echo '<img src="images/cart1.png">';
+        echo '<input type="image" src="images/cart1.png" name="add_to_cart" class="cartbtn" value="Add to Cart">';
         echo '</div>';
         
         echo '</div>';

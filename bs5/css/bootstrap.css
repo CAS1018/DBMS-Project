@@ -10681,7 +10681,9 @@ textarea.form-control-lg {
     font-family: "montserrat";
 }
 body {
-    background-color: #A3D9F5;
+    /* background-color: #A3D9F5; */
+    /* background-color: #befbf1; */
+    background-color: white;
     
 }
 header {
@@ -10744,7 +10746,7 @@ footer {
     background-color: #222222;
     width: 100%;
     height: 500px;
-    border-top: 100px solid white;
+    border-top: 100px solid #c9fff8;
 }
 
 .products {
@@ -10759,10 +10761,12 @@ footer {
   margin-left: 0%;
 }
 
-.col-md{
-  color: white;
+.prod_block {
+  color: black;
+  border: 1px solid #d8d8d896;
   margin-bottom: 10px;
-  background-color: #222222;
+  /* background-color: #222222; */
+  background-color: white;
   text-align: center;
   border-radius: 4%;
   margin-right: 10px;
@@ -10808,9 +10812,16 @@ footer {
     margin-top: 8px;
 }
 
-.pag_cart  img{
+.cartbtn {
+  padding: 4px 4px 4px 4px;
   height: 40px;
   width: 40px;
+  background-color: #ffbe8a;
+  border-radius: 20%;
+}
+
+.cartbtn:hover {
+  background-color: #ffbe8aa1;
 }
 
 .price {
