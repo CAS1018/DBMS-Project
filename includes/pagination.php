@@ -28,14 +28,34 @@
     while ($row = mysqli_fetch_array($result)) { 
         echo '<div class="col-md">';
         echo '<img src="' . $row['imageURL'] . '">'; 
-        echo '<p>' . $row['name_desc'] . '<br>' . $row['price'] . ' ' . $row['currency'] . '<br> <p>'; 
+        
+        echo '<div class="cold-md prod_desc">';
+        echo '<p>' . $row['name_desc'] . '</p>'; 
         echo '</div>';
+        
+        echo '<div class="row price_cart">';
+        
+        echo '<div class="col-md price">';
+        echo '<p>' . $row['price'] . ' ' . $row['currency'] . '</p>';
+        echo '</div>';
+        
+        echo '<div class="col-md pag_cart">';
+        echo '<img src="images/cart1.png">';
+        echo '</div>';
+        
+        echo '</div>';
+        
+        echo '</div>';
+        
+        // echo '<div class="pag_cart">';
+        // // echo '<input type="submit" name="add_to_cart" class="btn btn-success" value="Add to Cart" />';
+        // echo '</div>'
     }
     
     echo '</div>';
     
     //display links to the pages
-    for ($page=1; $page <= $number_of_pages; ++$page) {
-        echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
-    }
+    // for ($page=1; $page <= $number_of_pages; ++$page) {
+    //     echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
+    // }
 ?>

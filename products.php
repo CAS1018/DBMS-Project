@@ -38,10 +38,18 @@
                 <!--create formating for displaying products  -->
                 
             <div class="row"> 
-            
                 <?php
                     include_once "includes/pagination.php";
                 ?>
+            </div>
+            <div class="links">
+                <?php
+                    //display links to the pages
+                    for ($page=1; $page <= $number_of_pages; ++$page) {
+                        echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
+                    }
+                ?>
+            </div>
         </div>
    <footer>
        
