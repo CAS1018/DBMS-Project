@@ -10708,20 +10708,27 @@ nav {
 nav ul {
     display: inline-block;
     list-style-type: none;
+    margin-top: 16px;
 }
 nav ul li {
     display: inline-block;
     margin-right: 60px;
 }
+
 .cart {
     height: 46px;
     width: 46px;
     margin-right: 40px;
+    margin-bottom: 7px;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+a:hover {
+  color: #ffbe8a;
 }
 
 .row-1 {
