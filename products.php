@@ -1,5 +1,6 @@
 <?php
     include_once "includes/dbconn.php";
+    include_once "includes/cartFunctions.php";
 ?>
 
 
@@ -25,7 +26,7 @@
                     <li><a href="#footer">Contacts</a></li>
                 </ul>
             </nav>
-            <a href="#shopping-cart">
+            <a href="cart.php">
                 <div class="cart">
                     <img src="images/cart2.png" alt="shopping cart">
                 </div>
@@ -42,15 +43,8 @@
                     include_once "includes/pagination.php";
                 ?>
             </div>
-            <div class="links">
-                <?php
-                    //display links to the pages
-                    for ($page=1; $page <= $number_of_pages; ++$page) {
-                        echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
-                    }
-                ?>
-            </div>
         </div>
+        
    <footer>
        
    </footer>
