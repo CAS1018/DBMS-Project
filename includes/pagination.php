@@ -29,12 +29,12 @@
     <div class="products">
         <div class="row">
             <?php while ($row = mysqli_fetch_array($result)) { ?>
-            
                 <div class="col-md prod_block">
-                    <img src="<?php echo $row['imageURL']; ?>"> 
+                    <form method="post" action="cart.php?action=add&id=<?php echo $row["id"]; ?>">
+                    <img src="<?php echo $row['image']; ?>"> 
                     
-                    <div class="cold-md prod_desc">
-                        <p><?php echo $row['name_desc']; ?> </p> 
+                    <div class="col-md prod_desc">
+                        <p><?php echo $row['name']; ?> </p> 
                     </div>
                     
                     <div class="row price_cart">
@@ -43,17 +43,26 @@
                         </div>
                 
                         <div class="col-md pag_cart">
-                            <input type="image" src="images/cart1.png" name="add_to_cart" class="cartbtn" value="Add to Cart">
-                            <input type="hidden" name="hidden_name" value="<?php echo $row['name_desc']; ?>" />
-                            <input type="hidden" name="hidden_price" value="<?php echo $row['price']; ?>" />
-                            <input type="hidden" name="hidden_img" value="<?php echo $row['imageURL']; ?>" />
+                            <!-- <input type="image" src="images/cart1.png" name="add" class="cartbtn"> -->
+                            <input type="hidden" name="hidden_name" value="<?php echo $row["id"]; ?>" />
+                            <input type="text" name="quantity" value="1" class="form-control" />
+                            <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
+                            <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
+                            <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
                         </div>
-                        
                     </div>
+                    </form>
                 </div>
             <?php } ?>
-            
         </div>
     </div>
         
+    <div class="links">
+        <?php
+            //display links to the pages
+            for ($page=1; $page <= $number_of_pages; ++$page) {
+                echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
+            }
+        ?>
+    </div>
         
