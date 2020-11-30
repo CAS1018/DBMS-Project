@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="bs5/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="htps://umpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
+    <script src="bs5/js/bootstrap.js"></script>
 </head>
 <body>
         <header>
@@ -33,16 +35,19 @@
             </a>
         </header>
    <!-- display products with php pagination -->
-        <div class="products">
-            <script src="htps://umpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js"></script>
-            <script src="bs5/js/bootstrap.js"></script>
                 <!--create formating for displaying products  -->
                 
-            <div class="row"> 
                 <?php
                     include_once "includes/pagination.php";
                 ?>
-            </div>
+        
+        <div class="links">
+            <?php
+                //display links to the pages
+                for ($page=1; $page <= $number_of_pages; ++$page) {
+                    echo '<a href="products.php?page=' . $page . '">' . $page . '</a> ';
+                }
+            ?>
         </div>
         
    <footer>
