@@ -45,10 +45,10 @@
                         <div class="col-md pag_cart">
                             <!-- <input type="image" src="images/cart1.png" name="add" class="cartbtn"> -->
                             <input type="hidden" name="hidden_name" value="<?php echo $row["id"]; ?>" />
-                            <input type="text" name="quantity" value="1" class="form-control" />
+                            <input type="text" name="quantity" value="1" class="form-control quantity" />
                             <input type="hidden" name="hidden_name" value="<?php echo $row["name"]; ?>" />
                             <input type="hidden" name="hidden_price" value="<?php echo $row["price"]; ?>" />
-                            <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn btn-success" value="Add to Cart" />
+                            <input type="submit" name="add_to_cart" style="margin-top:5px;" class="btn-success cartbtn" value="Add to Cart"/>
                         </div>
                     </div>
                     </form>

@@ -10802,22 +10802,35 @@ footer {
 
 .prod_desc {
   height: 42px;
+  /* border: 2px solid red; */
 }
 .price_cart {
   text-align: right;
   margin-right: 2%;
+  /* border: 2px solid orange; */
 }
 .pag_cart {
     text-align: right;
     margin-top: 8px;
+    /* border: 2px solid blue; */
+    text-align: center;
+    padding-left: 8%;
+    margin-bottom: 10px;
+}
+
+.quantity {
+  width: 120px; 
+  text-align: right;
 }
 
 .cartbtn {
   padding: 4px 4px 4px 4px;
   height: 40px;
-  width: 40px;
+  width: 120px;
   background-color: #ffbe8a;
-  border-radius: 20%;
+  border-radius: 6%;
+  border: 0px solid ; 
+  text-align: center;
 }
 
 .cartbtn:hover {

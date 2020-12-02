@@ -25,7 +25,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="product.php">Products</a></li>
+                <li><a href="products.php">Products</a></li>
                 <li><a href="#footer">About</a></li>
                 <li><a href="#footer">Contacts</a></li>
             </ul>
